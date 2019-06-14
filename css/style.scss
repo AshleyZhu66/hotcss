@@ -1,0 +1,51 @@
+@import "px2rem.scss"; //第一步先把px2rem导入
+
+$designWidth: 750; //写scss之前，必须要先定义designWidth。根据设计师设计稿宽度
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul {
+    list-style: none;
+  }
+body {
+    width: px2rem(750);
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .container {
+    width: px2rem(750);
+    background-color: #f7f7f7;
+    .content {
+      padding-left: px2rem(20);
+      background-color: #fff;
+      p {
+        font-size: px2rem(24);
+        padding-top: px2rem(40);
+        color: #999999;
+        line-height: px2rem(50);
+        height: px2rem(50);
+      }
+      ul li {
+        height: px2rem(100);
+        line-height: px2rem(100);
+        border-top: 1px solid #d1d1d1;
+        span {
+          font-size: px2rem(28);
+          color: #333333;
+          float: left;
+        }
+        img {
+          margin-top: px2rem(45);
+          float: right;
+          line-height: px2rem(100);
+          width: px2rem(16);
+          height: px2rem(18);
+          margin-right: px2rem(20);
+        }
+      }
+    }
+}

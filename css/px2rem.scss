@@ -1,0 +1,5 @@
+
+//pc2rem.scss 页面代码
+@function px2rem( $px ){
+	@return $px*320/$designWidth/20 + rem;
+}
